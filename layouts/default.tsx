@@ -1,28 +1,28 @@
 import { Navbar } from "@/components/navbar";
 import { Head } from "./head";
-import Title from "@/components/title";
+import Title from "@/components/title-section";
 import Footer from "@/components/footer";
 
-import { Outfit } from "next/font/google";
-const outfit = Outfit({ subsets: ["latin"] });
+import { Poppins } from "next/font/google";
+const poppins = Poppins({ weight: ["500", "300"], subsets: ["latin"] });
 
-export default function DefaultLayout({  
+export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {  
+}) {
   return (
-    <div className={outfit.className}>
+    <div className={poppins.className}>        
       <div className="relative flex flex-col">
         <Head />
         <Navbar />
-        <div>          
+        <div>
           <Title />
           <main className="container mx-auto flex-grow" id="products">
             {children}
           </main>
         </div>
-        <Footer showAllInputs={false}/>        
+        <Footer showAllInputs={false} />
       </div>
     </div>
   );

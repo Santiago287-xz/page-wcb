@@ -12,6 +12,21 @@ module.exports = {
     extend: {
       backgroundColor: {
         'custom': 'var(--nextui-background)',
+      },
+      keyframes: {
+        typewriter: {
+          // 'from': { width: '0' },          
+          '0%': { height: '0', borderColor: 'transparent' },
+          '50%': { height: '100%', borderColor: 'white' },
+          '80%': { borderColor: 'transparent' },
+          '100%': { fontSize: '4.5rem' },
+        },
+        blink: {
+          'border': { borderColor: 'transparent' },
+        }
+      },
+      animation: {
+        typewriter: 'typewriter 2s ease-in-out',
       }
     },
   },

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import CategoryTitle from "./title";
 
 export default function Services() {
   const list = [
@@ -21,9 +22,10 @@ export default function Services() {
   ];
 
   return (
-    <main className="bg-no-repeat bg-cover bg-center bg-[url(https://media.discordapp.net/attachments/1019381524149305426/1184631889328349235/z9C80iCFgwKFQAAAABJRU5ErkJggg.png?format=webp&quality=lossless&width=945&height=591)] py-12 flex justify-center items-center">
-      <section className="flex flex-wrap justify-center gap-4 w-11/12">
-        <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+    <main className="pb-16 flex justify-center items-center bg-no-repeat bg-cover bg-center abg-[url(https://media.discordapp.net/attachments/1019381524149305426/1184631889328349235/z9C80iCFgwKFQAAAABJRU5ErkJggg.png?format=webp&quality=lossless&width=945&height=591)]">
+      <section className="flex flex-wrap justify-center gap-4 w-4/5">
+        <CategoryTitle text='Services'/>
+        <div className="gap-2 grid grid-cols-2 sm:grid-cols-3">
           {list.map((item, index) => (
             <Card
               shadow="sm"
