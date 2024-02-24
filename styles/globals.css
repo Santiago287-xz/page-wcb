@@ -10,3 +10,7 @@
   background-color: #9b9b9b;
   border-radius: 4px;
 }
+
+.text-effect{
+  -webkit-text-stroke: 0.5px #fff;
+}
