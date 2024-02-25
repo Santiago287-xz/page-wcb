@@ -7,16 +7,16 @@ export const siteConfig = {
     "Nos encontramos enfocados al máximo en crear y construir mousepads orientados al deporte competitivo profesional en sus diferentes entregas.",
   navItems: [
     {
-      label: "Services",
-      href: "/",
+      label: "Skills",
+      href: "#skills",
     },
     {
-      label: "Skills",
-      href: "/tienda/magic-control",
+      label: "Services",
+      href: "#services",
     },
     {
       label: "Contact us",
-      href: "/ayuda",
+      href: "#contact",
     },
   ],
   images: {

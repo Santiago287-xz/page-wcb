@@ -8,7 +8,6 @@ import {
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
-  Image,
 } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
@@ -16,7 +15,6 @@ import NextLink from "next/link";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, InstagramIcon } from "@/components/icons";
 
 const lightLogoURL = siteConfig.images.lightMiniLogo;
 const darkLogoURL = siteConfig.images.darkMiniLogo;

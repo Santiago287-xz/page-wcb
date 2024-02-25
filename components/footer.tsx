@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 export default function Footer({ showAllInputs }: { showAllInputs: boolean }) {
   return (
     <>
-      <MailForm showAllInputs={showAllInputs} />
+      <MailForm />
       <footer className="w-full flex flex-col items-center p-6 px-24  gap-5 bg-[#141a1f]">
         <div className="flex items-center gap-4 mt-4">
           <Link isExternal href={siteConfig.links.twitter}>
@@ -22,7 +22,7 @@ export default function Footer({ showAllInputs }: { showAllInputs: boolean }) {
         <Divider />
         <div className="flex flex-wrap justify-center md:justify-between w-full">
           <span className="text-gray-400">
-            Copyright © 2023-2024 Argen Reps
+            Copyright © 2023-2024 WebCodeBuilders
           </span>
           <Link
             isExternal

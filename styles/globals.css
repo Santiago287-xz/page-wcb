@@ -14,3 +14,7 @@
 .text-effect{
   -webkit-text-stroke: 0.5px #fff;
 }
+
+.splide__arrow svg{
+  fill: #fff !important;
+}

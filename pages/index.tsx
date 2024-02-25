@@ -1,14 +1,14 @@
 import DefaultLayout from "@/layouts/default";
-import Services from "@/components/services";
+import Services from "@/components/services-section";
 import Skills from "@/components/skills-section";
-import ContactSection from "@/components/contact-section";
+import Projects from "@/components/projects-section";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <Services />
+      <Projects/>
       <Skills />
-      <ContactSection />
+      <Services />
     </DefaultLayout>
   );
 }
