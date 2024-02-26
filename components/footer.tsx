@@ -26,7 +26,7 @@ export default function Footer({ showAllInputs }: { showAllInputs: boolean }) {
           </span>
           <Link
             isExternal
-            href={siteConfig.links.webcodebuilders}
+            href={siteConfig.links.page}
             className="flex items-center gap-1 text-current"
           >
             <span className="text-zinc-200 pl-2">Powered by</span>
