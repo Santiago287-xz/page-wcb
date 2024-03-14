@@ -49,7 +49,6 @@ export const Navbar = () => {
                   href={item.href}
                   as={Link}
                   className="text-lg dark:font-extralight bg-transparent p-6"
-                  // className="text-lg bg-foreground/10 p-6"
                 >
                   {item.label}
                 </Button>

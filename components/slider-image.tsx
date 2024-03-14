@@ -4,8 +4,10 @@ import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
 
 import { Image, Link } from "@nextui-org/react";
+import { siteConfig } from "@/config/site";
+import type { Project } from "@/config/site";
 
-export default function SliderImage({ projects }: { projects: any }) {
+export default function SliderImage({ projects }: { projects: Project[]}) {
   return (
     <div className="rounded-lg w-auto m-auto col-start-1 col-end-1 md:row-start-1 md:row-end-3">
       <Splide
@@ -24,23 +26,23 @@ export default function SliderImage({ projects }: { projects: any }) {
         aria-label="Products"
       >
         {projects.map((data, index) => {
-          const local_link = data.name
+          const local_link = siteConfig.domain + 'projects/' + data.id
           return (
           <SplideSlide key={index} className="flex justify-center px-4">
             {data.link != "" ? (              
-              <Link isExternal={true} href={data.link}>                
+              <Link isExternal={true} href={local_link}>                
                 <Image
                   removeWrapper
-                  alt={data.image.alt}
-                  src={data.image.link}
+                  alt={data.image.principal_image.alt}
+                  src={data.image.principal_image.link}
                   className="z-0 object-cover w-auto max-h-[30rem]"
                 />
               </Link>
             ) : (
               <Image
                 removeWrapper
-                alt={data.image.alt}
-                src={data.image.link}
+                alt={data.image.principal_image.alt}
+                src={data.image.principal_image.link}
                 className="z-0 object-cover w-auto max-h-[30rem]"
               />
             )}

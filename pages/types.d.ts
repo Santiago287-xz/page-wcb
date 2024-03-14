@@ -1,9 +1,8 @@
 export type Project = {
-  content: {
-    name: string;
-    image: {
-      link: string;
-      alt: string;
-    };
+  id: string;
+  link: string;
+  image: {
+    link: string;
+    alt: string;
   };
 };

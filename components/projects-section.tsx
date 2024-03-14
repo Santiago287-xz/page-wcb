@@ -3,6 +3,7 @@ import { Divider } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 
 export default function ProjectSection() {
+  const projects = siteConfig.projects.content
   return (
     <main className="py-4 flex justify-center items-center bg-[#09090b]">
       <section className="flex flex-wrap justify-center gap-4 w-4/5">
@@ -12,7 +13,7 @@ export default function ProjectSection() {
           <Divider className="bg-white/80" />
         </div>
         <div className="flex flex-wrap justify-center gap-4 w-3/4">
-          <SliderImage projects={siteConfig.projects.content}></SliderImage>
+          <SliderImage projects={projects}></SliderImage>
         </div>
       </section>
     </main>
