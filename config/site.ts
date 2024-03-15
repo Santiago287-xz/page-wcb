@@ -42,7 +42,7 @@ export const siteConfig = {
       path: "",
       title: "Estudio del proyecto",
       subtitle:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
-      bio: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
+      info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
     },
   ],
   question_section: [
