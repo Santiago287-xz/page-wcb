@@ -2,81 +2,94 @@ import React from "react";
 import { Card, CardBody, CardFooter, Button } from "@nextui-org/react";
 import CategoryTitle from "./title";
 
+import {
+  UserIcon,
+  SpeakerWaveIcon,
+  DevicePhoneMobileIcon,
+  ComputerDesktopIcon,
+  ListBulletIcon,
+  CodeBracketIcon,
+} from "@heroicons/react/24/solid";
+
 export default function SkillsSection() {
   const list = [
     {
-      title: "Lastest",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210747257213947914/Sin_titulo222.png?ex=65ebaf40&is=65d93a40&hm=b88d73233a83ddcd9c83758a3e7002c6194af46886bb4d7ea4d345a66b830ee1&=&format=webp&quality=lossless",
-      bio: "Ecommerce echo en react que esta basado en caca.",
+      icono: (
+        <DevicePhoneMobileIcon className="w-[2.8rem] h-[3rem] text-indigo-400	" />
+      ),
+      title: "Responsive design",
+      style: "",
+      bio: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
     },
     {
-      title: "ArgenReps",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210747257213947914/Sin_titulo222.png?ex=65ebaf40&is=65d93a40&hm=b88d73233a83ddcd9c83758a3e7002c6194af46886bb4d7ea4d345a66b830ee1&=&format=webp&quality=lossless",
-      bio: "Un blogger donde lleva informacion privada de santiago fama para hackear.",
+      icono: (
+        <ComputerDesktopIcon className="w-[2.8rem] h-[3rem] text-cyan-400	" />
+      ),
+      title: "Sistema de diseño",
+      style: "",
+      bio: "Tengo manejo de sistemas de diseño, lo cual permite agilidad en el proceso de diseño acortando los tiempos en la creación de las interfaces dentro del proyecto.",
     },
     {
-      title: "Punto de venta",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210747257213947914/Sin_titulo222.png?ex=65ebaf40&is=65d93a40&hm=b88d73233a83ddcd9c83758a3e7002c6194af46886bb4d7ea4d345a66b830ee1&=&format=webp&quality=lossless",
-      bio: "Un punto de venta echo en python donde podras filtrar los productos de excel mediante el codigo de barras.",
+      icono: <UserIcon className="w-[2.8rem] h-[3rem] text-lime-400	" />,
+      title: "Cooworking",
+      style: "0",
+      bio: "Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del proyecto.",
     },
     {
-      title: "Punto de venta",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210747257213947914/Sin_titulo222.png?ex=65ebaf40&is=65d93a40&hm=b88d73233a83ddcd9c83758a3e7002c6194af46886bb4d7ea4d345a66b830ee1&=&format=webp&quality=lossless",
-      bio: "Un punto de venta echo en python donde podras filtrar los productos de excel mediante el codigo de barras.",
+      icono: (
+        <SpeakerWaveIcon className="w-[2.8rem] h-[3rem] text-yellow-400	" />
+      ),
+      title: "Comunicación",
+      style: "hover:shadow-[0_3px_187px_7px_rgba(237,107,0,0.45)] hover:bg-[rgb(237,107,0)]",
+      bio: "Puedo mantener comunicación  con el equipo de desarrollo, atento a cualquier inquietud que se presente con el fin de llevar el proyecto de manera correcta.",
     },
     {
-      title: "Punto de venta",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210747257213947914/Sin_titulo222.png?ex=65ebaf40&is=65d93a40&hm=b88d73233a83ddcd9c83758a3e7002c6194af46886bb4d7ea4d345a66b830ee1&=&format=webp&quality=lossless",
-      bio: "Un punto de venta echo en python donde podras filtrar los productos de excel mediante el codigo de barras.",
+      icono: <ListBulletIcon className="w-[2.8rem] h-[3rem] text-red-400" />,
+      style: "hover:shadow-[0_3px_187px_7px_rgba(238,29,54,0.5)] hover:bg-[rgb(238,29,54)]",
+      title: "Iteración",
+      bio: "Soy capaz de iterar recibiendo e interpretando el feedback que me sea proporcionado con el fin de mejorar la calidad del producto que esté diseñando.",
     },
     {
-      title: "Punto de venta",
-      img: "https://media.discordapp.net/attachments/1019381524149305426/1210727904414273556/Sin_titulo.png?ex=65eb9d3a&is=65d9283a&hm=61f91b24f976f1f004366fb30abdde04e3c1234e6b6477d1b4ce91dbfaddb5b5&=&format=webp&quality=lossless",
-      bio: "Un punto de venta echo en python donde podras filtrar los productos de excel mediante el codigo de barras.",
+      icono: (
+        <CodeBracketIcon className="w-[2.8rem] h-[3rem] text-orange-400" />
+      ),
+      title: "React y Tailwind",
+      style: "400",
+      bio: "Tengo conocimientos basicos y bien fundamentados de html y css, lo que me permite tener un panorama mas claro a la hora de tomar mis decisiones de diseño para los desarrolladores.",
     },
   ];
 
   return (
-<main className="pb-16 flex justify-center items-center bg-no-repeat bg-cover bg-center abg-[url(https://media.discordapp.net/attachments/1019381524149305426/1184631889328349235/z9C80iCFgwKFQAAAABJRU5ErkJggg.png?format=webp&quality=lossless&width=945&height=591)]" id="skills">
-  <section className="flex flex-wrap justify-center gap-4 w-4/5">
-    <CategoryTitle text="Skills" description="Choose one of styles or cutomize easily your site following your ideas."/>
-    <div className="flex flex-wrap justify-center gap-4">
-          {list.map((item, index) => (
-            <Card
-              shadow="sm"
-              key={index}
-              style={{ width: "395px", height: "268px", position: "relative", overflow: "hidden" }}
+    <section className="bg-color-[#09090b]">
+      <div
+        className="py-16 bg-no-repeat bg-cover bg-center bg-zinc-900 flex justify-center items-center"
+        id="services"
+      >
+        <section className="flex flex-wrap justify-center gap-4 w-11/12">
+          <CategoryTitle
+            text="Servicios"
+            description="Estos son algunas de las cualidades que se intengran en los proyectos."
+          />
+        </section>
+      </div>
+      <div className="flex flex-wrap justify-center gap-7 my-32 w-4/5 container mx-auto">
+        {list.map((item, index) => (
+          <Card
+            key={index}
+            className={"mt-6 w-[22.1rem] h-auto bg-transparent rounded-md border border-gray-800 min-w-[30%] transition-[color,_background,_box-shadow_!important] hover:text-black " + item.style}
             >
-              <div
-                style={{
-                  backgroundImage: `url(${item.img})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  width: "100%",
-                  height: "100%",
-                  position: "absolute",
-                  zIndex: 1,
-                  opacity: 0.1,
-                }}
-              />
-              <CardBody className="overflow-visible p-4 relative z-10">
-                <div className="flex items-center mb-2">
-                  <b className="text-start mr-2 text-2xl mt-4">{item.title}</b> 
-                </div>
-                <p className="text-default-500 mb-4 mt-4 text-lg"> 
-                  {item.bio}
-                </p>
-              </CardBody>
-              <CardFooter className="text-small justify-between z-2 relative">
-                <b>
-                  <Button>Ver más</Button>
+            <CardBody className="overflow-visible p-4 relative z-10">
+              {item.icono}
+              <div className="flex items-center mb-2">
+                <b className="text-start mr-2 text-2xl mt-4 tracking-wide font-medium">
+                  {item.title}
                 </b>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </section>
-    </main>
-
+              </div>
+              <h4 className="opacity-75 mb-4 mt-4 text-md">{item.bio}</h4>
+            </CardBody>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 }

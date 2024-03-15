@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar";
+import Navbar from "@/components/navbar";
 import { Head } from "./head";
 import Footer from "@/components/footer";
 
@@ -15,7 +15,7 @@ export default function DefaultLayout({
       <div className="relative flex flex-col overflow-x-hidden">
         <Head />
         <Navbar />
-        <main className="container mx-auto flex-grow w-full " id="products">
+        <main className="mx-auto flex-grow w-full " id="products">
           {children}
         </main>
         <Footer />

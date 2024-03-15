@@ -29,6 +29,32 @@ export const siteConfig = {
   ],
   images: {},
   videos: {},
+  about_section: [
+    {
+      id: 1,
+      path: "",
+      title: "Estudio del proyecto",
+      subtitle:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
+    },
+    {
+      id: 2,
+      path: "",
+      title: "Estudio del proyecto",
+      subtitle:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
+    },
+  ],
+  question_section: [
+    {
+      title: "Estudio del proyecto",
+      content:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+    },
+    {
+      title: "Estudio del proyecto",
+      content:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+    },
+  ],
   projects: {
     content: [
       {
@@ -36,7 +62,7 @@ export const siteConfig = {
         link: "https://www.magicbyzeko.com/",
         image: {
           principal_image: {
-            link: "https://i.imgur.com/ZDfcMBy.png",
+            link: "https://imgur.com/Y6eWHxd.png",
             alt: "a",
           },
           first_image: {
@@ -68,7 +94,7 @@ export const siteConfig = {
         link: "https://www.magicbyzeko.com/",
         image: {
           principal_image: {
-            link: "https://imgur.com/ghDZ0YO.png",
+            link: "https://imgur.com/njtiLwc.png",
             alt: "a",
           },
           first_image: {
@@ -83,6 +109,38 @@ export const siteConfig = {
         text: {
           first: {
             title: "Magic by zEko",
+            subtitle: "Featured Project",
+            paragraph:
+              "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+          },
+          second: {
+            title: "Example Project",
+            subtitle: "Featured Project",
+            paragraph:
+              "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+          },
+        },
+      },
+      {
+        id: "puntodeventa",
+        link: "https://www.magicbyzeko.com/",
+        image: {
+          principal_image: {
+            link: "https://imgur.com/WDjWvux.png",
+            alt: "a",
+          },
+          first_image: {
+            link: "https://media.discordapp.net/attachments/1019381524149305426/1216552544407650334/image.png?ex=6600cdd9&is=65ee58d9&hm=db5d6da51de2f3c3c78cd8255d37149745b6ec978ab13a850fd71d5241fbec14&=&format=webp&quality=lossless&width=687&height=388",
+            alt: "a",
+          },
+          second_image: {
+            link: "https://imgur.com/ghDZ0YO.png",
+            alt: "a",
+          },
+        },
+        text: {
+          first: {
+            title: "Punto de Venta",
             subtitle: "Featured Project",
             paragraph:
               "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
