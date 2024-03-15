@@ -12,22 +12,9 @@ import {
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
-import { useTheme } from "next-themes";
-import React, { useEffect, useState } from "react";
 import { ThemeSwitch } from "@/components/theme-switch";
 
-const lightLogoURL = siteConfig.images.lightMiniLogo;
-const darkLogoURL = siteConfig.images.darkMiniLogo;
-
 export const Navbar = () => {
-  const [imageUrl, setImageUrl] = useState("");
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    const imageUrl = theme === "light" ? lightLogoURL : darkLogoURL;
-    setImageUrl(imageUrl);
-  }, [theme]);
-
   return (
     <>
       <NextUINavbar
