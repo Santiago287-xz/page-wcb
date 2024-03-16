@@ -32,7 +32,7 @@ export default function SkillsSection() {
     {
       icono: <UserIcon className="w-[2.8rem] h-[3rem] text-lime-400	" />,
       title: "Cooworking",
-      style: "0",
+      style: "",
       bio: "Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del proyecto.",
     },
     {
