@@ -14,7 +14,11 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import { ThemeSwitch } from "@/components/theme-switch";
 
+<<<<<<< HEAD
 export default function Navbar() {
+=======
+export const Navbar = () => {
+>>>>>>> 79410eecd2afe86b1d4468f3d43907a0894d4ae1
   return (
     <NextUINavbar
       className="backdrop-blur-sm animate-fade-down animate-duration-[350ms] 

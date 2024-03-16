@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.1.1",
     "@nextui-org/react": "^2.1.7",
     "@react-email/html": "0.0.4",
     "@splidejs/react-splide": "^0.7.12",

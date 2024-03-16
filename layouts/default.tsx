@@ -15,7 +15,7 @@ export default function DefaultLayout({
       <div className="relative flex flex-col overflow-x-hidden">
         <Head />
         <Navbar />
-        <main className="mx-auto flex-grow w-full " id="products">
+        <main className="container mx-auto flex-grow w-full " id="products">
           {children}
         </main>
         <Footer />

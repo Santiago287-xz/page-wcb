@@ -1,7 +1,8 @@
 import { nextui } from '@nextui-org/react'
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+/ @type {import('tailwindcss').Config} */
+module.exports = withMT({
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,8 +15,7 @@ module.exports = {
         'custom': 'var(--nextui-background)',
       },
       keyframes: {
-        typewriter: {
-          // 'from': { width: '0' },          
+        typewriter: {      
           '0%': { height: '0', borderColor: 'transparent' },
           '50%': { height: '100%', borderColor: 'white' },
           '80%': { borderColor: 'transparent' },
@@ -34,4 +34,4 @@ module.exports = {
   plugins: [nextui({
     defaultTheme: "light"
   }), require('tailwindcss-animated')],
-}
+})
