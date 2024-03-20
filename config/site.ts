@@ -8,18 +8,26 @@ export const siteConfig = {
     "Nos encontramos enfocados al máximo en crear y construir mousepads orientados al deporte competitivo profesional en sus diferentes entregas.",
   domain: "http://localhost:3000/",
   text: {
-    contact:{
+    contact: {
       h4: "Contact",
-      p: "I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect."
-    }
+      p: "I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.",
+    },
   },
   navItems: [
     {
-      label: "Skills",
-      href: "http://localhost:3000/#skills",
+      label: "Fases",
+      href: "",
+    },
+    {
+      label: "Projectos",
+      href: "#services",
     },
     {
       label: "Services",
+      href: "#services",
+    },
+    {
+      label: "FAQ´S",
       href: "#services",
     },
     {
@@ -34,25 +42,29 @@ export const siteConfig = {
       id: 1,
       path: "",
       title: "Estudio del proyecto",
-      subtitle:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      subtitle:
+        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
       info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
     },
     {
       id: 2,
       path: "",
       title: "Estudio del proyecto",
-      subtitle:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      subtitle:
+        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
       info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
     },
   ],
   question_section: [
     {
       title: "Estudio del proyecto",
-      content:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      content:
+        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
     },
     {
       title: "Estudio del proyecto",
-      content:"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+      content:
+        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
     },
   ],
   projects: {
@@ -72,6 +84,20 @@ export const siteConfig = {
           second_image: {
             link: "https://imgur.com/ghDZ0YO.png",
             alt: "a",
+          },
+        },
+        color: {
+          first: {
+            h4: "text-[#0070f0]",
+            h1: "from-[#ccdff6] to-[#ccdbf6]",
+            gradient: "bg-[radial-gradient(#121ca61f_0%,#0f2a8500_60%)]",
+            image: "bg-[#0c0b3a29] hover:bg-[#16155d29]",
+          },
+          second: {
+            h4: "text-[#0a5dbc]",
+            h1: "text-[#cdbfea]",
+            gradient: "bg-[radial-gradient(#1d56bb1c_0%,#0f2a8500_70%)]",
+            image: "bg-[#0c0b3a29] hover:bg-[#16155d29]",
           },
         },
         text: {
@@ -106,6 +132,20 @@ export const siteConfig = {
             alt: "a",
           },
         },
+        color: {
+          first: {
+            h4: "text-[#9857D3]",
+            h1: "from-[#CCD6F6] to-[#d9ccf6]",
+            gradient: "bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]",
+            image: "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]",
+          },
+          second: {
+            h4: "text-[#6d45c4]",
+            h1: "text-[#cdbfea]",
+            gradient: "bg-[radial-gradient(#3a12c11c_0%,#320F8500_70%)]",
+            image: "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]",
+          },
+        },
         text: {
           first: {
             title: "Magic by zEko",
@@ -136,6 +176,20 @@ export const siteConfig = {
           second_image: {
             link: "https://imgur.com/ghDZ0YO.png",
             alt: "a",
+          },
+        },
+        color: {
+          first: {
+            h4: "text-[#9857D3]",
+            h1: "from-[#CCD6F6] to-[#d9ccf6]",
+            gradient: "bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]",
+            image: "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]",
+          },
+          second: {
+            h4: "text-[#6d45c4]",
+            h1: "text-[#cdbfea]",
+            gradient: "bg-[radial-gradient(#3a12c11c_0%,#320F8500_70%)]",
+            image: "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]",
           },
         },
         text: {

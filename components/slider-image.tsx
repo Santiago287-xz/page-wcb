@@ -28,7 +28,7 @@ export default function SliderImage({ projects }: { projects: Project[]}) {
         {projects.map((data, index) => {
           const local_link = siteConfig.domain + 'projects/' + data.id
           return (
-          <SplideSlide key={index} className="flex justify-center px-4">
+          <SplideSlide key={index} className="flex justify-center px-4 mx-16">
             {data.link != "" ? (              
               <Link isExternal={true} href={local_link}>                
                 <Image

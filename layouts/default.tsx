@@ -12,10 +12,11 @@ export default function DefaultLayout({
 }) {
   return (
     <div className={poppins.className}>
-      <div className="relative flex flex-col overflow-x-hidden">
+      <div className="text-xl flex justify-center items-center h-screen sm:hidden">Coming soon!!</div>
+      <div className="relative  flex-col overflow-x-hidden hidden sm:flex">
         <Head />
         <Navbar />
-        <main className="container mx-auto flex-grow w-full " id="products">
+        <main className="mx-auto flex-grow w-full " id="products">
           {children}
         </main>
         <Footer />

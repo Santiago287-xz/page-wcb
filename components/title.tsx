@@ -8,7 +8,7 @@ export default function CategoryTitle({
   description: string;
 }) {
   return (
-    <div>
+    <div className="w-full animate-fade">
       <h1 className="text-5xl text-foreground text-center p-3 pt-8 font-light">
         {text}
       </h1>

@@ -206,8 +206,8 @@ export const MailIcon: React.FC<IconSvgProps> = ({
 };
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
-  width,
-  height,
+  width = 16,
+  height = 16,
   ...props
 }) => {
   return (

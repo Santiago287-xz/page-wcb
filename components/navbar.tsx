@@ -18,11 +18,10 @@ export default function Navbar() {
   return (
     <NextUINavbar
       className="backdrop-blur-sm animate-fade-down animate-duration-[350ms] 
-      animate-delay-100 bg-[#ebeff3db] dark:bg-background/80 z-[200000] w-4/5 max-w-[45rem] m-auto top-4 rounded-2xl h-12"
-      maxWidth="md"
+      animate-delay-100 bg-[#ebeff3db] dark:bg-background/80 w-auto m-auto top-4 rounded-2xl h-[3.5rem]"
       position="sticky"
     >
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+      <NavbarContent className="basis-2/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink href="/">
             WebCode<b className="text-[#731682]">Builder</b>

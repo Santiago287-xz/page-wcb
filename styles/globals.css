@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.change-color-icon:hover > div > svg {
+  color: black !important;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -11,10 +15,21 @@
   border-radius: 4px;
 }
 
-.text-effect{
-  -webkit-text-stroke: 0.5px #fff;
+.text-gradient {
+  background-image: linear-gradient(90deg, #803be0, #ae4cbd, #bc65d9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient:hover {
+  filter: drop-shadow(0 0 0.5rem #803be0);
 }
 
-.splide__arrow svg{
+.text-effect {
+  -webkit-text-stroke: 1px hsl(var(--nextui-foreground));
+}
+
+.splide__arrow svg {
   fill: #fff !important;
 }
