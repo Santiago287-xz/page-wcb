@@ -19,9 +19,9 @@ export default function Footer() {
       </div>
       <Divider />
       <div className="flex flex-wrap justify-center">
-        <span className="text-foreground/80">
+        <p className="text-foreground/80 text-center">
           Copyright © 2023-2024 <span className="text-gradient duration-500 transition-all">WebCodeBuilders</span>
-        </span>
+        </p>
       </div>
     </footer>
   );

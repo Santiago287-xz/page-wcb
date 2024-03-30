@@ -14,8 +14,7 @@ module.exports = {
         'custom': 'var(--nextui-background)',
       },
       keyframes: {
-        typewriter: {
-          // 'from': { width: '0' },          
+        typewriter: {        
           '0%': { height: '0', borderColor: 'transparent' },
           '50%': { height: '100%', borderColor: 'white' },
           '80%': { borderColor: 'transparent' },

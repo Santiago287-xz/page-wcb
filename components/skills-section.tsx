@@ -66,36 +66,33 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="bg-color-[#09090b]">
-      <div
-        className="pt-16 px-4 md:px-32 bg-no-repeat bg-cover bg-center flex justify-center items-center"
-        id="services"
-      >
-        <CategoryTitle
-          text="Servicios"
-          description="Estos son algunas de las cualidades que se intengran en los proyectos."
-        />
-      </div>
-      <div className="flex flex-wrap justify-center gap-7 my-8 md:my-24 w-4/5 container mx-auto">
-        {list.map((item, index) => (
-          <Card
-            key={index}
-            className={
-              "mt-6 w-[22.1rem] h-auto bg-transparent rounded-md border border-gray-800 min-w-[30%] transition-[color,_background,_box-shadow_!important] hover:text-black change-color-icon " +
-              item.style
-            }
-          >
-            <CardBody className="overflow-visible p-4 relative z-10">
-              {item.icono}
-              <div className="flex items-center mb-2">
-                <b className="text-start mr-2 text-2xl mt-4 tracking-wide font-medium opacity-90">
-                  {item.title}
-                </b>
-              </div>
-              <h4 className=" opacity-60 my-3 text-md">{item.bio}</h4>
-            </CardBody>
-          </Card>
-        ))}
+    <section className="dark:bg-black bg-white">
+      <div className=" mb-[10rem] py-16 w-4/5 container mx-auto" id="services">
+        <h1 className="text-[4rem] text-foreground text-start p-3 pt-2 font-light">
+          Skill palabra
+        </h1>
+        <p className="font-light text-[1.0rem] font-weight-2 ml-[3rem]">Estos son lagunos de los skills </p>
+        <div className="flex flex-wrap justify-center gap-7">
+          {list.map((item, index) => (
+            <Card
+              key={index}
+              className={
+                "mt-6 w-[22.1rem] h-auto bg-transparent rounded-md border border-gray-800 min-w-[30%] transition-[color,_background,_box-shadow_!important] hover:text-black change-color-icon " +
+                item.style
+              }
+            >
+              <CardBody className="overflow-visible p-4 relative z-10">
+                {item.icono}
+                <div className="flex items-center mb-2">
+                  <b className="text-start mr-2 text-2xl mt-4 tracking-wide font-medium opacity-90">
+                    {item.title}
+                  </b>
+                </div>
+                <h4 className=" opacity-60 my-3 text-md">{item.bio}</h4>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

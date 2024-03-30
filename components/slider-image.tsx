@@ -7,7 +7,7 @@ import { Image, Link } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import type { Project } from "@/config/site";
 
-export default function SliderImage({ projects }: { projects: Project[]}) {
+export default function SliderImage({ projects }: { projects: Project[] }) {
   return (
     <div className="rounded-lg w-auto m-auto col-start-1 col-end-1 md:row-start-1 md:row-end-3">
       <Splide
@@ -25,29 +25,30 @@ export default function SliderImage({ projects }: { projects: Project[]}) {
         }}
         aria-label="Products"
       >
-        {projects.map((data, index) => {
+        {projects.map((data) => {
           const local_link = siteConfig.domain + 'projects/' + data.id
           return (
-          <SplideSlide key={index} className="flex justify-center px-4 mx-16">
-            {data.link != "" ? (              
-              <Link isExternal={true} href={local_link}>                
+            <SplideSlide key={data.id} className="flex justify-center px-4 mx-16">
+              {data.link != "" ? (
+                <Link isExternal={true} href={local_link}>
+                  <Image
+                    removeWrapper
+                    alt={data.image.principal_image.alt}
+                    src={data.image.principal_image.link}
+                    className="z-0 object-cover w-auto max-h-[30rem]"
+                  />
+                </Link>
+              ) : (
                 <Image
                   removeWrapper
                   alt={data.image.principal_image.alt}
                   src={data.image.principal_image.link}
                   className="z-0 object-cover w-auto max-h-[30rem]"
                 />
-              </Link>
-            ) : (
-              <Image
-                removeWrapper
-                alt={data.image.principal_image.alt}
-                src={data.image.principal_image.link}
-                className="z-0 object-cover w-auto max-h-[30rem]"
-              />
-            )}
-          </SplideSlide>
-        )})}
+              )}
+            </SplideSlide>
+          )
+        })}
       </Splide>
     </div>
   );

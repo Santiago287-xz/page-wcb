@@ -17,7 +17,7 @@ import ContactArticle from "@/components/contact-article";
 // Argen reps
 
 // Magic by Zeko
-"text-[#9 857D3]";
+"text-[#9857D3]";
 "from-[#CCD6F6] to-[#d9ccf6]"
 "bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]";
 "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";

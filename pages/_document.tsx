@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang={siteConfig.lenguage} className="scroll-smooth">
       <Head />
-      <body className="min-h-screen bg-zinc-200 dark:bg-zinc-950 antialiased font-sans">
+      <body className="min-h-[100svh] bg-zinc-200 dark:bg-zinc-950 antialiased font-sans transition-all">
         <Main />
         <NextScript />
       </body>
