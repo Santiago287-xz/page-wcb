@@ -18,8 +18,7 @@ export default function Navbar() {
   return (
     <NextUINavbar
       className="backdrop-blur-sm animate-fade-down animate-duration-[350ms] 
-      animate-delay-100 bg-[#ebeff3db] dark:bg-background/80 w-auto m-auto top-4 rounded-2xl h-[3.5rem]"
-      position="sticky"
+      animate-delay-100 bg-[#ebeff3db] dark:bg-background/80 w-fit m-auto top-4 rounded-2xl h-[3.5rem] fixed"
     >
       <NavbarContent className="basis-2/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
@@ -60,7 +59,7 @@ export default function Navbar() {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           <NavbarMenuItem>
             {siteConfig.navItems.map((item) => (
-              <NavbarItem key={item.href}>
+              <NavbarItem key={item.href + "_phone"}>
                 <Link
                   color="foreground"
                   className="py-2"

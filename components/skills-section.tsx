@@ -66,12 +66,12 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="dark:bg-black bg-white">
-      <div className=" mb-[10rem] py-16 w-4/5 container mx-auto" id="services">
-        <h1 className="text-[4rem] text-foreground text-start p-3 pt-2 font-light">
-          Skill palabra
-        </h1>
-        <p className="font-light text-[1.0rem] font-weight-2 ml-[3rem]">Estos son lagunos de los skills </p>
+    <section className="bg-white dark:bg-[#09090b] dark:text-white text-gray-900">
+      <div className="px-4 mx-auto py-16 max-w-7xl sm:px-6 lg:px-8">
+        <div className="max-w-xl mx-auto text-center">
+            <h2 className="text-4xl font-bold lg:text-5xl sm:text-5xl">Skills</h2>
+            <p className="mt-4 text-lg leading-relaxed">Estas son algunas de nuestras habilidades que hacen que conformen el equipo.</p>
+        </div>
         <div className="flex flex-wrap justify-center gap-7">
           {list.map((item, index) => (
             <Card

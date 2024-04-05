@@ -6,7 +6,7 @@ import ContactArticle from "@/components/contact-article";
 
 // Argen reps
 "text-[#0070f0]";
-"from-[#ccdff6] to-[#ccdbf6]";
+"dark:from-[#ccdff6] dark:to-[#ccdbf6]";
 "bg-[radial-gradient(#121ca61f_0%,#0f2a8500_60%)]";
 "bg-[#0c0b3a29] hover:bg-[#16155d29]";
 
@@ -18,7 +18,7 @@ import ContactArticle from "@/components/contact-article";
 
 // Magic by Zeko
 "text-[#9857D3]";
-"from-[#CCD6F6] to-[#d9ccf6]"
+"dark:from-[#CCD6F6] dark:to-[#d9ccf6]"
 "bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]";
 "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
 
@@ -73,7 +73,7 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
               </h4>
               <h1
                 className={
-                  "bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-center font-semibold text-4xl mt-1 w-fit " +
+                  "bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-center font-semibold text-4xl mt-1 w-fit from-gray-800 to-black " +
                   project.color.first.h1
                 }
               >

@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <section className="h-[100svh] transition-all mt-[-3rem] relative">
+    <section className="h-[100svh] transition-all relative">
       <div className="flex flex-wrap flex-col h-full w-full absolute content-center justify-center z-20">
         <div className="flex content-center justify-center flex-wrap flex-col text-2xl sm:text-4xl md:text-6xl w-auto font-light animate-fade-down text-foreground">
           <div className="m-auto">

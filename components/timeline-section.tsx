@@ -27,7 +27,7 @@ export default function TimelineSection() {
   ];
 
   return (
-    <section className="w-full px-8 pt-12 md:px-32 md:pt-32 gap-16 flex justify-center flex-col items-center lg:items-start lg:flex-row bg-white dark:bg-transparent">
+    <section className="w-full px-8 py-12 md:px-32 md:pt-32 gap-16 flex justify-center flex-col items-center lg:items-start lg:flex-row bg-white dark:bg-[#09090b] dark:text-white">
       <article className="container h-[20rem] max-w-[38rem] flex flex-col justify-between">
         <h2 className="text-5xl md:text-6xl">
           The digital

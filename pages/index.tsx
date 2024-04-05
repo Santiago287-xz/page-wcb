@@ -5,6 +5,7 @@ import Title from "@/components/title-section";
 import Particles from "@/components/particles";
 import TimelineSection from "@/components/timeline-section";
 import Pregutas from "@/components/question_section"
+import PuntoVenta from "@/components/punto_venta"
 import ContactArticle from "@/components/contact-article";
 
 export default function IndexPage() {
@@ -15,6 +16,7 @@ export default function IndexPage() {
       <TimelineSection/>
       <Projects/>
       <Skills />
+      <PuntoVenta />
       <Pregutas />
       <ContactArticle/>
     </DefaultLayout>
