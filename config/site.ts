@@ -16,45 +16,27 @@ export const siteConfig = {
   navItems: [
     {
       label: "Fases",
-      href: "",
+      href: "/#phases",
     },
     {
       label: "Projectos",
-      href: "#projects",
+      href: "/#projects",
     },
     {
       label: "Services",
-      href: "#services",
+      href: "/#services",
     },
     {
       label: "FAQ'S",
-      href: "#faq",
+      href: "/#faq",
     },
     {
       label: "Contact us",
-      href: "#contact",
+      href: "/#contact",
     },
   ],
   images: {},
   videos: {},
-  about_section: [
-    {
-      id: 1,
-      path: "",
-      title: "Estudio del proyecto",
-      subtitle:
-        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
-      info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
-    },
-    {
-      id: 2,
-      path: "",
-      title: "Estudio del proyecto",
-      subtitle:
-        "Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
-      info: "Analizamos cuáles son tus objetivos, el target al cual nos dirigimos, y estudiamos a la competencia. A partir del estudio te presentamos un proyecto web y una estrategia de marketing digital ganadoras.",
-    },
-  ],
   question_section: [
     {
       title: "Estudio del proyecto",
@@ -70,10 +52,10 @@ export const siteConfig = {
   projects: {
     content: [
       {
-        id: "argen_reps",
+        id: "magic_by_zeko",
         name: "Magic by zEko",
-        title: "Featured works",
-        short_description: "An expert on our team will work with you to understand your goals, technical needs, and team dynamics.",
+        title: "Magic by Zeko",
+        short_description: "sadad",
         date: "23/10/2011",
         link: "https://www.magicbyzeko.com/",
         image: {
@@ -86,11 +68,11 @@ export const siteConfig = {
             alt: "a",
           },
           first_image: {
-            link: "https://imgur.com/ghDZ0YO.png",
+            link: "https://i.imgur.com/37GMkI5.png",
             alt: "a",
           },
           second_image: {
-            link: "https://imgur.com/ghDZ0YO.png",
+            link: "https://i.imgur.com/Gy1TrDs.png",
             alt: "a",
           },
         },
@@ -110,8 +92,8 @@ export const siteConfig = {
         },
         text: {
           first: {
-            title: "Argen Reps",
-            subtitle: "Featured Project",            
+            title: "Magic by zEko",
+            subtitle: "Magic by zEko",            
             paragraph:
               "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
           },
@@ -125,9 +107,9 @@ export const siteConfig = {
       },
       {
         id: "puntodeventa",
-        name: "puntodeventa",
-        title: "Featured works",
-        short_description: "An expert on our team will work with you to understand your goals, technical needs, and team dynamics.",
+        name: "Punto de venta",
+        title: "Punto de venta",
+        short_description: "El Rincón del Pescador nos solicitó crear un programa capaz de buscar productos con el fin de solicitar información específica, obteniendo datos de productos de manera más ágil.",
         date: "23/10/2011",
         link: "https://www.magicbyzeko.com/",
         image: {
@@ -140,11 +122,11 @@ export const siteConfig = {
             alt: "a",
           },
           first_image: {
-            link: "https://media.discordapp.net/attachments/1019381524149305426/1221621103923826698/image.png?ex=66133e4f&is=6600c94f&hm=46a5af5e72fd036a6cbc112a6822ef3f0a449596f10f46f65fa424f2ab5b0b9a&=&format=webp&quality=lossless&width=547&height=670",
+            link: "https://i.imgur.com/bYO2DKl.png",
             alt: "a",
           },
           second_image: {
-            link: "https://imgur.com/ghDZ0YO.png",
+            link: "",
             alt: "a",
           },
         },
@@ -170,18 +152,17 @@ export const siteConfig = {
               "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
           },
           second: {
-            title: "Example Project",
-            subtitle: "Featured Project",
-            paragraph:
-              "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+            title: "",
+            subtitle: "",
+            paragraph: "",
           },
         },
       },
       {
-        id: "magicbyzeko",
-        name: "Projecto 51",
-        title: "Featured works",
-        short_description: "An expert on our team will work with you to understand your goals, technical needs, and team dynamics.",
+        id: "argenreps",
+        name: "ArgenReps",
+        title: "Argen Reps",
+        short_description: "Esto es la descripcion de argenreps.",
         date: "23/10/2011",
         link: "https://www.magicbyzeko.com/",
         image: {
@@ -194,11 +175,11 @@ export const siteConfig = {
             alt: "a",
           },
           first_image: {
-            link: "https://media.discordapp.net/attachments/1019381524149305426/1221621103923826698/image.png?ex=66133e4f&is=6600c94f&hm=46a5af5e72fd036a6cbc112a6822ef3f0a449596f10f46f65fa424f2ab5b0b9a&=&format=webp&quality=lossless&width=547&height=670",
+            link: "https://i.imgur.com/SYzGiLq.png",
             alt: "a",
           },
           second_image: {
-            link: "https://imgur.com/ghDZ0YO.png",
+            link: "",
             alt: "a",
           },
         },

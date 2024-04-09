@@ -6,36 +6,36 @@ export default function TimelineSection() {
   const list = [
     {
       icono: <span className="text-indigo-400">01</span>,
-      title: "Consulta inicial",
-      bio: "Comencemos con una discusión detallada sobre su proyecto. Exploraremos su visión, objetivos y requisitos específicos para garantizar una comprensión integral.",
+      title: <span className="text-indigo-400">Inicio del Proyecto</span>,
+      bio: "Empezamos con una charla para entender tu proyecto. Hablaremos de tus ideas, lo que necesitas y cómo podemos hacerlo realidad.",
     },
     {
       icono: <span className="text-yellow-400">02</span>,
-      title: "Propuesta a medida",
-      bio: "Basándome en nuestra conversación, elaboraré una propuesta detallada que describa el alcance del proyecto, el cronograma estimado y un desglose transparente de los costos.",
+      title: <span className="text-yellow-400">Propuesta Personalizada</span>,
+      bio: "Basándome en lo que discutimos, te presento una propuesta detallada con lo que haremos, cuánto costará y cuánto tiempo llevará.",
     },
     {
       icono: <span className="text-cyan-400">03</span>,
-      title: "Vista previa del diseño",
-      bio: "Antes de sumergirse en el desarrollo a gran escala, podrá vislumbrar la dirección del diseño. Esto permite recibir comentarios tempranos y garantiza que estemos alineados creativamente.",
+      title: <span className="text-cyan-400">Diseño Previa</span>,
+      bio: "Antes de empezar a trabajar en grande, te mostraré cómo lucirá el diseño para que puedas dar tu opinión y asegurarte de que vamos por buen camino.",
     },
     {
       icono: <span className="text-lime-400">04</span>,
-      title: "Toques finales y entrega",
-      bio: "Una vez que el proyecto esté a punto de finalizar, colaboraremos en los ajustes finales. Su satisfacción es primordial y lo perfeccionaremos hasta que todo cumpla con sus expectativas.",
-    },
+      title: <span className="text-lime-400">Ajustes y Entrega</span>,
+      bio: "Trabajaremos juntos para perfeccionar los detalles finales. Me aseguraré de que estés feliz con el resultado antes de entregarte el proyecto terminado.",
+    },    
   ];
 
   return (
-    <section className="w-full px-8 py-12 md:px-32 md:pt-32 gap-16 flex justify-center flex-col items-center lg:items-start lg:flex-row bg-white dark:bg-[#09090b] dark:text-white">
+    <section className="w-full px-8 py-12 md:px-32 md:pt-32 gap-16 flex justify-center flex-col items-center lg:items-start lg:flex-row bg-white dark:bg-[#09090b] dark:text-white" id="phases">
       <article className="container h-[20rem] max-w-[38rem] flex flex-col justify-between">
         <h2 className="text-5xl md:text-6xl">
-          The digital
-          marketing agency.
+          Fases que
+          tiene un proyecto.
         </h2>
         <div className="max-w-[30rem] flex flex-col items-end lg:block">
-          <p>Out integrated digital frameworks are meticulously <span className="text-foreground-700">designed to streamline sales funnels.</span></p>
-          <Button endContent={<ArrowUpRightIcon className="h-full p-1 text-foreground" />} className="gap-0 my-4 rounded-sm">Get in touch</Button>
+          <p>Estas son las principales<span className="text-indigo-400"> tareas </span> <span className="text-foreground-700">que relizamos para el desarrollo de tu proyecto.</span></p>
+          <Button href="/#contact" endContent={<ArrowUpRightIcon className="h-full p-1 text-foreground" />} className="gap-0 my-4 rounded-sm">Contactanos</Button>
         </div>
       </article>
       <article className="relative w-[90%] max-w-[40rem] p-0 md:px-6 flex flex-col justify-center">

@@ -6,7 +6,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function ProjectSection() {
   return (
-    <section className="flex flex-col justify-center items-center bg-[#e4e4e7] dark:bg-[#09090b] dark:text-white">
+    <section className="flex flex-col justify-center items-center bg-[#e4e4e7] dark:bg-[#09090b] dark:text-white" id="projects">
       <article className="flex justify-center w-full px-12 md:px-16 pt-32">
         <div className="flex flex-col justify-between sm:gap-12">
           <div>

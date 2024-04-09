@@ -28,6 +28,18 @@ import ContactArticle from "@/components/contact-article";
 "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
 // Magic by Zeko
 
+// Punto de venta
+"text-[#9857D3]";
+"dark:from-[#CCD6F6] dark:to-[#d9ccf6]"
+"bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]";
+"bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
+
+"text-[#6d45c4]";
+"text-[#cdbfea]";
+"bg-[radial-gradient(#3a12c11c_0%,#320F8500_70%)]";
+"bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
+// Punto de venta
+
 export async function getStaticPaths() {
   const paths = siteConfig.projects.content.map((item) => ({
     params: {
@@ -40,14 +52,14 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: { params: { id: string } }) {
   const project = siteConfig.projects.content.filter(
     (x) => x.id == params.id
-    )[0];
-    return { props: { project } };
-  }
-  
-  export default function Project({ project }: { project: Project }) {
+  )[0];
+  return { props: { project } };
+}
+
+export default function Project({ project }: { project: Project }) {
   return (
     <DefaultLayout>
-      <section className="m-auto pt-36 relative overflow-x-hidden">
+      <section className="min-h-[50rem] m-auto pt-36 relative overflow-x-hidden">
         <div
           className={
             "absolute h-[50rem] w-[50rem] rounded-[50%] right-[-20rem] top-[0rem] " +
@@ -102,7 +114,7 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
             </div>
           </div>
         </article>
-        <article className="mt-36">
+        {project.text.second.title != "" ? <article className="mt-36">
           <div className="relative w-[70%] m-auto">
             <div
               className={
@@ -143,7 +155,7 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
               </Card>
             </div>
           </div>
-        </article>
+        </article> : <></>}
         <ContactArticle />
       </section>
     </DefaultLayout>

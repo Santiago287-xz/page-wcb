@@ -66,10 +66,10 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="bg-white dark:bg-[#09090b] dark:text-white text-gray-900">
+    <section className="bg-white dark:bg-[#09090b] dark:text-white text-gray-900" id="services">
       <div className="px-4 mx-auto py-16 max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center">
-            <h2 className="text-4xl font-bold lg:text-5xl sm:text-5xl">Skills</h2>
+            <h2 className="text-4xl font-bold lg:text-5xl sm:text-5xl">Servicios y Skills</h2>
             <p className="mt-4 text-lg leading-relaxed">Estas son algunas de nuestras habilidades que hacen que conformen el equipo.</p>
         </div>
         <div className="flex flex-wrap justify-center gap-7">
