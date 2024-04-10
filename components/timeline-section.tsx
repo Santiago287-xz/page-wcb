@@ -16,7 +16,7 @@ export default function TimelineSection() {
     },
     {
       icono: <span className="text-cyan-400">03</span>,
-      title: <span className="text-cyan-400">Diseño Previa</span>,
+      title: <span className="text-cyan-400">Diseño Previo</span>,
       bio: "Antes de empezar a trabajar en grande, te mostraré cómo lucirá el diseño para que puedas dar tu opinión y asegurarte de que vamos por buen camino.",
     },
     {
