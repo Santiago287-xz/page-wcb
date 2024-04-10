@@ -42,7 +42,7 @@ export default function TimelineSection() {
         <ul className="flex flex-col gap-4">
           {list.map((item, index) => (
             <li className="flex items-start lg:items-center mb-4 flex-col lg:flex-row" key={index}>
-              <div className="w-max flex items-center gap-4">
+              <div className="flex items-center gap-4 fit-content">
                 <div className="w-fit p-4 border-1 border-gray-800 rounded-[0.5rem] justify-center flex bg-transparent text-[2rem] h-auto min-w-[5rem]">
                   {item.icono}
                 </div>

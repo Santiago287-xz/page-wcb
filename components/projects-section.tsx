@@ -52,7 +52,7 @@ export default function ProjectSection() {
               src={"https://media.discordapp.net/attachments/1019381524149305426/1225586360883216394/image.png?ex=6621ab3e&is=660f363e&hm=5999e87fcc83893c4bb0570b1806f3672ff31b2a74b70708e9bac1dd07b0f212&=&format=webp&quality=lossless&width=687&height=381"}
               alt={siteConfig.projects.content[1].image.principal_image.alt}
               removeWrapper
-              className="rounded-none w-full"
+              className="w-full bg-[#131313] rounded-lg"
             />
             <Image
               src={"https://media.discordapp.net/attachments/1019381524149305426/1225587628259414167/image.png?ex=6621ac6c&is=660f376c&hm=8ef9d5c33c5550881d5e8af2afccbc088a57ddd6f1efdc8bb47792892f51fdd5&=&format=webp&quality=lossless&width=735&height=670"}

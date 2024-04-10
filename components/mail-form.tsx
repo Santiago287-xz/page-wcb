@@ -29,17 +29,16 @@ export default function MailForm() {
 
   return (
     <form
-      className="flex flex-col items-center gap-4 md:gap-8 justify-center py-16"
+      className="flex flex-col items-center gap-4 md:gap-8 justify-center p-16"
       id="contact"
       onSubmit={onSubmit}
     >
       <h1 className="text-lg md:text-xl lg:text-4xl text-center tracking-wide text-foreground-800">
         Contactate con Nosotros
       </h1>
-      <p className="uppercase text-center tracking-[0.16em] text-foreground-700 lg:text-xs">
+      <p className="hidden md:block uppercase text-center tracking-[0.16em] text-foreground-700 lg:text-xs">
         Completa los campos asi nos ponemos en contacto !Te atenderemos!
       </p>
-
 
       <div className="flex flex-wrap gap-2 w-full max-w-lg">
         <div className="flex gap-4 w-full">

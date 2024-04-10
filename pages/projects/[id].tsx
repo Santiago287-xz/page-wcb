@@ -84,7 +84,7 @@ export default function Project({ project }: { project: Project }) {
                 {project.text.first.subtitle}
               </h4>
               <h1
-                className="bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-center font-semibold text-4xl mt-1 w-fit from-gray-800 to-black dark:from-[#ccdff6] dark:to-[#ccdbf6]">
+                className="bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-start font-semibold text-4xl mt-1 w-fit from-gray-800 to-black dark:from-[#ccdff6] dark:to-[#ccdbf6]">
                 {project.text.first.title}
               </h1>
               <Card

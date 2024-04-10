@@ -30,28 +30,30 @@ export default function PuntoVenta() {
                 <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 gap-y-4 lg:items-center lg:grid-cols-2 xl:grid-cols-2">
                         <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0 xl:pr-20">
-                            <h1 className="text-4xl font-bold leading-tight text-foreground sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">{project.title}</h1>
-                            <p className="mt-2 text-lg text-foreground sm:mt-6 font-inter">{project.short_description}</p>
-                            <Button
-                                endContent={<ArrowRightIcon className="h-full p-1 text-foreground" />}
-                                className="gap-0 my-4 rounded-sm w-fit"
-                                as={Link}
-                                href={"/projects/" + project.id}>
-                                Ver Mas
-                            </Button>
+                            <h1 className="text-4xl font-bold leading-tight text-foreground sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight text-start">{project.title}</h1>
+                            <p className="mt-2 text-lg text-foreground sm:mt-6 font-inter text-start">{project.short_description}</p>
+                            <div className='w-full flex justify-start'>
+                                <Button
+                                    endContent={<ArrowRightIcon className="h-full p-1 text-foreground" />}
+                                    className="gap-0 my-4 rounded-sm w-fit"
+                                    as={Link}
+                                    href={"/projects/" + project.id}>
+                                    Ver Mas
+                                </Button>
+                            </div>
                             <div className="mt-8 sm:mt-16">
-                                <div className="flex items-center justify-center lg:justify-start">
+                                <div className="flex items-center justify-start">
                                     <StarRating />
                                 </div>
 
                                 <blockquote className="mt-6">
-                                    <p className="text-lg font-bold text-foreground font-pj">Esto me salvo la vida !</p>
-                                    <p className="mt-3 text-base leading-7 text-foreground font-inter">Yo anteriormente usaba una lista de precios pero era engorrosa actulizar todo el timepo el precio y tambien costaba buscar justo el producto en esa lista estensa, con este porgrama es tan sencillo como escanear el producto y encontrarlo rapidamente.</p>
+                                    <p className="text-lg font-bold text-foreground text-start">Proyecto Inmobiliaria</p>
+                                    <p className="mt-3 text-base leading-7 text-foreground text-start">Este proyecto implicó la actualización de una página existente. El cliente contaba con un sitio web en Jumbla y nos propuso mejorar su velocidad y estética. Decidimos utilizar WordPress para lograr una actualización más rápida y visualmente atractiva.</p>
                                 </blockquote>
 
-                                <div className="flex items-center justify-center mt-3 lg:justify-start">
-                                    <Image className="flex-shrink-0 object-cover w-6 h-6 overflow-hidden rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3pb1Iq4j9XGxvqo23H2bdJsOzOq6CxFLJyHYCwzZag&s" alt="" />
-                                    <p className="ml-2 text-base font-bold text-foreground font-pj">{project.title}</p>
+                                <div className="flex items-center mt-3 justify-start">
+                                    <Image className="flex-shrink-0 object-cover w-6 h-6 overflow-hidden rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_loffFbIVSZNKSNzEQfiJyXoc1j-AK-rOpMN7KCfMw&s" alt="" />
+                                    <p className="ml-2 text-base font-bold text-foreground text-start">{project.title}</p>
                                 </div>
                             </div>
                         </div>

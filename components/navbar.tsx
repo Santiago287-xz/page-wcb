@@ -55,8 +55,8 @@ export default function Navbar() {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+      <NavbarMenu className="top-[0_!important] h-[100vh_!important]">
+        <div className="mx-4 mt-20 flex flex-col gap-2">
           <NavbarMenuItem>
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href + "_phone"}>

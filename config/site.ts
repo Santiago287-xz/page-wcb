@@ -39,14 +39,29 @@ export const siteConfig = {
 	videos: {},
 	question_section: [
 		{
-			title: "Estudio del proyecto",
+			title: "¿Cuánto tiempo lleva desarrollar un sitio web o software desde el inicio hasta la entrega final?",
 			content:
-				"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+				"Depende del proyecto, pero entre 2 y 5 meses ",
 		},
 		{
-			title: "Estudio del proyecto",
+			title: "¿Qué tipo de sitios web y software desarrollan?",
 			content:
-				"Hola somos una empresa que se dedica al contador de plata y quereos colaborar",
+				"Desarrollamos sitios web y software a medida, lo que necesites",
+		},
+		{
+			title: "¿Ofrecen opciones de financiamiento o planes de pago flexibles?",
+			content:
+				"Si podemos llegar a un acuerdo de financiamiento o planes de pago",
+		},
+		{
+			title: "¿Ofrecen servicios de alojamiento web y gestión de servidores?",
+			content:
+				"Si, nosotros manejamos nuestra propia máquina alojada en Buenos Aires",
+		},
+		{
+			title: "¿Qué tecnologías y plataformas utilizan para el desarrollo?",
+			content:
+				"Depende del proyecto, pero podemos utilizar y adaptarnos a cualquier tecnología",
 		},
 	],
 	projects: {
@@ -263,9 +278,10 @@ export const siteConfig = {
 		],
 	},
 	links: {
-		instagram: "https://www.instagram.com/magicbyzeko/",
-		tiktok: "https://www.instagram.com/magicbyzeko/",
-		page: "https://www.instagram.com/webcode__/",
+		instagram: "https://www.instagram.com/webcode__/",
+		discord: "https://discord.gg/8qdhPtY4nm",
+		tiktok: "https://www.tiktok.com/@webcodebuilders",
+		page: "https://webcodebuilders.vercel.app/",
 	},
 	contact: {
 		gmail: "web.code.build.accout@gmail.com",
