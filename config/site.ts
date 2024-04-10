@@ -5,7 +5,7 @@ export const siteConfig = {
 	lenguage: "es",
 	name: "WebCodeBuilders",
 	description:
-		"Nos encontramos enfocados al máximo en crear y construir mousepads orientados al deporte competitivo profesional en sus diferentes entregas.",
+		"Somos WebCodeBuilders, una empresa de desarrollo web y aplicaciones. Contáctanos para mas información",
 	domain: "http://localhost:3000/",
 	text: {
 		contact: {
@@ -162,7 +162,7 @@ export const siteConfig = {
 						title: "Punto de venta",
 						subtitle: "El rincon del pescador",
 						paragraph:
-							"Creamos un programa en Python capaz de buscas la información completa de productos a partir de un código partiendo de un archivo de excel, agilizando considerablemente el proceso de búsqueda.",
+							"Creamos un programa en Python capaz de buscar la información completa de productos a partir de un código en un archivo de Excel, agilizando considerablemente el proceso de búsqueda.",
 					},
 					second: {
 						title: "",
