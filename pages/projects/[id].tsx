@@ -5,7 +5,7 @@ import type { Project } from "@/config/site";
 import ContactArticle from "@/components/contact-article";
 
 // Argen reps
-"text-[#0070f0]";
+"text-[#10984d]";
 "dark:from-[#ccdff6] dark:to-[#ccdbf6]";
 "bg-[radial-gradient(#121ca61f_0%,#0f2a8500_60%)]";
 "bg-[#0c0b3a29] hover:bg-[#16155d29]";
@@ -17,7 +17,7 @@ import ContactArticle from "@/components/contact-article";
 // Argen reps
 
 // Magic by Zeko
-"text-[#9857D3]";
+"text-[#0070f0]";
 "dark:from-[#CCD6F6] dark:to-[#d9ccf6]"
 "bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]";
 "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
@@ -31,13 +31,10 @@ import ContactArticle from "@/components/contact-article";
 // Punto de venta
 "text-[#9857D3]";
 "dark:from-[#CCD6F6] dark:to-[#d9ccf6]"
-"bg-[radial-gradient(#7a21cd17_0%,#320F8500_60%)]";
+"bg-[radial-gradient(#0e4b0217_0%,#24932600_60%)]";
 "bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
 
-"text-[#6d45c4]";
-"text-[#cdbfea]";
-"bg-[radial-gradient(#3a12c11c_0%,#320F8500_70%)]";
-"bg-[rgba(30,11,58,0.16)] hover:bg-[#200b3a42]";
+"bg-[radial-gradient(#1883401c_0%,#05210c00_70%)]";
 // Punto de venta
 
 export async function getStaticPaths() {
@@ -55,10 +52,13 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
   )[0];
   return { props: { project } };
 }
-
+import Head from 'next/head'
 export default function Project({ project }: { project: Project }) {
   return (
     <DefaultLayout>
+      <Head>
+        <title>{project.name}</title>
+      </Head>
       <section className="min-h-[50rem] m-auto pt-36 relative overflow-x-hidden">
         <div
           className={
@@ -84,11 +84,7 @@ export default function Project({ project }: { project: Project }) {
                 {project.text.first.subtitle}
               </h4>
               <h1
-                className={
-                  "bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-center font-semibold text-4xl mt-1 w-fit from-gray-800 to-black " +
-                  project.color.first.h1
-                }
-              >
+                className="bg-clip-text text-transparent bg-gradient-to-r leading-[3rem] text-center font-semibold text-4xl mt-1 w-fit from-gray-800 to-black dark:from-[#ccdff6] dark:to-[#ccdbf6]">
                 {project.text.first.title}
               </h1>
               <Card
@@ -139,10 +135,7 @@ export default function Project({ project }: { project: Project }) {
                 {project.text.second.subtitle}
               </h4>
               <h1
-                className={
-                  "text-end font-semibold text-4xl mt-1 w-fit " +
-                  +project.color.second.h1
-                }
+                className="text-end font-semibold text-4xl mt-1 w-fit"
               >
                 {project.text.second.title}
               </h1>

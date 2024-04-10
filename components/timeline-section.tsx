@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 export default function TimelineSection() {
@@ -35,7 +35,7 @@ export default function TimelineSection() {
         </h2>
         <div className="max-w-[30rem] flex flex-col items-end lg:block">
           <p>Estas son las principales<span className="text-indigo-400"> tareas </span> <span className="text-foreground-700">que relizamos para el desarrollo de tu proyecto.</span></p>
-          <Button href="/#contact" endContent={<ArrowUpRightIcon className="h-full p-1 text-foreground" />} className="gap-0 my-4 rounded-sm">Contactanos</Button>
+          <Button href="/#contact" as={Link} endContent={<ArrowUpRightIcon className="h-full p-1 text-foreground" />} className="gap-0 my-4 rounded-sm">Contactanos</Button>
         </div>
       </article>
       <article className="relative w-[90%] max-w-[40rem] p-0 md:px-6 flex flex-col justify-center">

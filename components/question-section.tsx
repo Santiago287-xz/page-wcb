@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import Link from 'next/link';
 
 export default function Faq() {
     return (
@@ -10,7 +11,7 @@ export default function Faq() {
                     <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-foreground">FAQ'S</p>
                 </div>
                 <div className="max-w-3xl mx-auto mt-4 space-y-4 md:mt-12 ">
-                    <Accordion variant="splitted"  className='border-gray-800 bg-transparent'>
+                    <Accordion variant="splitted" className='border-gray-800 bg-transparent'>
                         {siteConfig.question_section.map((question, index) =>
                             <AccordionItem key={index} aria-label={question.title} title={question.title} className='border border-gray-800 bg-[transparent_!important]'>
                                 {question.content}
@@ -18,7 +19,7 @@ export default function Faq() {
                         )}
                     </Accordion>
                 </div>
-                <p className="text-center text-gray-600 textbase mt-9">¿No encontraste la respuesta que buscas?<a href="#" title="" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"> Contacte con nuestro soporte</a></p>
+                <p className="text-center text-gray-600 textbase mt-9">¿No encontraste la respuesta que buscas?<Link href="/#contact" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"> Contacte con nuestro soporte</Link></p>
             </div>
         </section>
     );

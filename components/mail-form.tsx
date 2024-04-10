@@ -1,5 +1,5 @@
 import { Input, Button, Textarea } from "@nextui-org/react";
-import { useState, FormEvent } from "react";
+import React, { useState, FormEvent } from "react";
 
 export default function MailForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -29,20 +29,18 @@ export default function MailForm() {
 
   return (
     <form
-      className="flex flex-col items-center gap-4 md:gap-8 justify-center p-4 py-12"
+      className="flex flex-col items-center gap-4 md:gap-8 justify-center py-16"
       id="contact"
       onSubmit={onSubmit}
     >
-      <div className="w-3/5">
-        <h1 className="md:text-xl lg:text-4xl font-light text-foreground-800">
-          Let's Work Together
-        </h1>
-        <p className="text-md pl-4 font-light">
-          Looking for someone who can deliver fast, effective programming
-          services? Look no further. You can pick me with an assurance of honest
-          and practical solutions
-        </p>
-      </div>
+      <h1 className="text-lg md:text-xl lg:text-4xl text-center tracking-wide text-foreground-800">
+        Contactate con Nosotros
+      </h1>
+      <p className="uppercase text-center tracking-[0.16em] text-foreground-700 lg:text-xs">
+        Completa los campos asi nos ponemos en contacto !Te atenderemos!
+      </p>
+
+
       <div className="flex flex-wrap gap-2 w-full max-w-lg">
         <div className="flex gap-4 w-full">
           <Input
@@ -73,14 +71,10 @@ export default function MailForm() {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <Button
-          className="w-full"
-          type="submit"
-          variant="faded"
-          isLoading={isLoading}
-          disabled={isLoading || isSubscribed}
-        >
-          {isSubscribed ? "Enviado !" : "Enviar"}
+      </div>
+      <div className="flex justify-center">
+        <Button className="w-42" type="submit" variant="faded" isLoading={isLoading} disabled={isLoading || isSubscribed}>
+          {isSubscribed ? ("Enviado !") : "Enviar"}
         </Button>
       </div>
     </form>
