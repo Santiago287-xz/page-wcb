@@ -129,7 +129,7 @@ export const siteConfig = {
 				link: "https://www.magicbyzeko.com/",
 				image: {
 					principal_image: {
-						link: "https://media.discordapp.net/attachments/1019381524149305426/1225586360883216394/image.png?ex=6621ab3e&is=660f363e&hm=5999e87fcc83893c4bb0570b1806f3672ff31b2a74b70708e9bac1dd07b0f212&=&format=webp&quality=lossless&width=1207&height=668",
+						link: "https://i.imgur.com/OLDbThD.png",
 						alt: "El Rincón del Pescador",
 					},
 					principal_image_phone: {
@@ -227,17 +227,17 @@ export const siteConfig = {
 				id: "blum",
 				name: "Blum",
 				title: "Inmobiliaria Blum",
-				short_description: "Esta pagina ",
+				short_description: "Este proyecto implicó la actualización de una página existente. El cliente contaba con un sitio web en Jumbla y nos propuso mejorar su velocidad y estética. Decidimos utilizar WordPress para lograr una actualización más rápida y visualmente atractiva.",
 				date: "23/10/2011",
 				link: "https://www.magicbyzeko.com/",
 				image: {
 					principal_image: {
-						link: "https://prod.spline.design/3oQ8OFb0mwYFMZ-p/scene.splinecode",
+						link: "https://i.imgur.com/cMAfqpI.png",
 						alt: "a",
 					},
 					principal_image_phone: {
-						link: "https://media.discordapp.net/attachments/1019381524149305426/1221621103923826698/image.png?ex=66133e4f&is=6600c94f&hm=46a5af5e72fd036a6cbc112a6822ef3f0a449596f10f46f65fa424f2ab5b0b9a&=&format=webp&quality=lossless&width=547&height=670",
-						alt: "a",
+						link: "",
+						alt: "",
 					},
 					first_image: {
 						link: "https://i.imgur.com/SUnXg5X.png",

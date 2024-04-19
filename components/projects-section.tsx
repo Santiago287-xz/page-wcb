@@ -47,27 +47,27 @@ export default function ProjectSection() {
 
       <article className="bg-white dark:bg-black dark:text-white w-full">
         <div className="flex justify-center w-full m-auto max-w-[100rem] px-12 md:px-32 py-16">
-          <div className="relative hidden lg:flex items-center pl-4">
+          <div className="relative hidden lg:flex items-center pl-4 w-[45rem]">
             <Image
-              src={"https://media.discordapp.net/attachments/1019381524149305426/1225586360883216394/image.png?ex=6621ab3e&is=660f363e&hm=5999e87fcc83893c4bb0570b1806f3672ff31b2a74b70708e9bac1dd07b0f212&=&format=webp&quality=lossless&width=687&height=381"}
+              src={"https://i.imgur.com/w2V3aHG.png"}
               alt={siteConfig.projects.content[1].image.principal_image.alt}
               removeWrapper
               className="w-full bg-[#131313] rounded-lg"
             />
             <Image
-              src={"https://media.discordapp.net/attachments/1019381524149305426/1225587628259414167/image.png?ex=6621ac6c&is=660f376c&hm=8ef9d5c33c5550881d5e8af2afccbc088a57ddd6f1efdc8bb47792892f51fdd5&=&format=webp&quality=lossless&width=735&height=670"}
+              src={"https://i.imgur.com/2I6n6Yj.png"}
               alt={siteConfig.projects.content[1].image.principal_image.alt}
               removeWrapper
               className="rounded-none w-1/4 absolute top-[30%] right-0 translate-x-[50%] z-10"
             />
             <Image
-              src={"https://media.discordapp.net/attachments/1019381524149305426/1225588017763188879/image.png?ex=6621acc9&is=660f37c9&hm=9746d9ec24db4a5dcd7af55334d1d2dec709738226cb2bc1a69f298ac3c0fa95&=&format=webp&quality=lossless&width=1440&height=453"}
+              src={"https://i.imgur.com/Xbyc3xP.png"}
               alt={siteConfig.projects.content[1].image.principal_image.alt}
               removeWrapper
               className="w-1/3 absolute bottom-[25%] translate-x-[-50%] z-10 rounded-none"
             />
             <Image
-              src={"https://media.discordapp.net/attachments/1019381524149305426/1225588042287419423/image.png?ex=6621accf&is=660f37cf&hm=441b772f8da829f542c94f33b5a2f652b70e236eef91e2ad90b77af7ae3e98d3&=&format=webp&quality=lossless&width=1440&height=350"}
+              src={"https://i.imgur.com/oXRYjyu.png"}
               alt={siteConfig.projects.content[1].image.principal_image.alt}
               removeWrapper
               className="w-2/5 absolute top-[35%] translate-x-[-50%] z-10 rounded-none"

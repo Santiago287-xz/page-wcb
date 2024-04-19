@@ -5,8 +5,9 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
 import { siteConfig } from "@/config/site";
 
-const lightLogoURL = "https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png";
-const darkLogoURL = "https://media.discordapp.net/attachments/1019381524149305426/1224877593514213418/background-patternDARKMODE.png?ex=661f1727&is=660ca227&hm=d3f0fb7eb98f07e2c9f18722d8c0281a1f6c93d006adcbf74202b2418c93a4a8&=&format=webp&quality=lossless&width=2434&height=1188";
+const lightLogoURL = "https://i.imgur.com/quwvJtE.png";
+const darkLogoURL = "https://i.imgur.com/z91OfFl.png";
+// const darkLogoURL = "https://media.discordapp.net/attachments/1019381524149305426/1224877593514213418/background-patternDARKMODE.png?ex=661f1727&is=660ca227&hm=d3f0fb7eb98f07e2c9f18722d8c0281a1f6c93d006adcbf74202b2418c93a4a8&=&format=webp&quality=lossless&width=2434&height=1188";
 
 export default function PuntoVenta() {
     const [imageUrl, setImageUrl] = useState("");
@@ -48,7 +49,7 @@ export default function PuntoVenta() {
 
                                 <blockquote className="mt-6">
                                     <p className="text-lg font-bold text-foreground text-start">Proyecto Inmobiliaria</p>
-                                    <p className="mt-3 text-base leading-7 text-foreground text-start">Este proyecto implicó la actualización de una página existente. El cliente contaba con un sitio web en Jumbla y nos propuso mejorar su velocidad y estética. Decidimos utilizar WordPress para lograr una actualización más rápida y visualmente atractiva.</p>
+                                    <p className="mt-3 text-base leading-7 text-foreground text-start">{project.short_description}</p>
                                 </blockquote>
 
                                 <div className="flex items-center mt-3 justify-start">
@@ -59,7 +60,7 @@ export default function PuntoVenta() {
                         </div>
 
                         <div className="xl:col-span-1 w-auto h-auto">
-                            <Image src="https://media.discordapp.net/attachments/1019381524149305426/1225593930888904715/Frame_85_10.png?ex=6621b24b&is=660f3d4b&hm=dd7f1a72436651a0927a108f309f2cdf176b3b2506345d4232c5f86f96ebd615&=&format=webp&quality=lossless&width=588&height=648" alt="" />
+                            <Image src={project.image.principal_image.link} alt="" />
                         </div>
                     </div>
                 </div>
