@@ -7,7 +7,6 @@ import { siteConfig } from "@/config/site";
 
 const lightLogoURL = "https://i.imgur.com/quwvJtE.png";
 const darkLogoURL = "https://i.imgur.com/z91OfFl.png";
-// const darkLogoURL = "https://media.discordapp.net/attachments/1019381524149305426/1224877593514213418/background-patternDARKMODE.png?ex=661f1727&is=660ca227&hm=d3f0fb7eb98f07e2c9f18722d8c0281a1f6c93d006adcbf74202b2418c93a4a8&=&format=webp&quality=lossless&width=2434&height=1188";
 
 export default function PuntoVenta() {
     const [imageUrl, setImageUrl] = useState("");
@@ -27,7 +26,6 @@ export default function PuntoVenta() {
                         src={imageUrl}
                         alt="Imagen projecto" />
                 </div>
-
                 <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 gap-y-4 lg:items-center lg:grid-cols-2 xl:grid-cols-2">
                         <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0 xl:pr-20">
@@ -58,7 +56,6 @@ export default function PuntoVenta() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="xl:col-span-1 w-auto h-auto">
                             <Image src={project.image.principal_image.link} alt="" />
                         </div>

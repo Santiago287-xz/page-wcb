@@ -173,11 +173,11 @@ export const siteConfig = {
 			},
 			{
 				id: "argenreps",
-				name: "Proyecto argen Reps",
-				title: "ArgenReps",
-				short_description: "En este proyecto, Argen Reps nos encargó el desarrollo de una página web con el objetivo de mejorar su organización interna y expandir su alcance hacia un público más amplio.",
+				name: "Proyecto Drops Bahia",
+				title: "Drops Bahia",
+				short_description: "En este proyecto, desarrollamos una página web personalizada y funcional para DropsBahia, proporcionando un catálogo en línea bien organizado, navegación intuitiva, disponibilidad de productos en tiempo real.",
 				date: "23/10/2011",
-				link: "https://www.magicbyzeko.com/",
+				link: "https://www.dropsbahia.com/",
 				image: {
 					principal_image: {
 						link: "https://prod.spline.design/3oQ8OFb0mwYFMZ-p/scene.splinecode",
@@ -188,11 +188,11 @@ export const siteConfig = {
 						alt: "a",
 					},
 					first_image: {
-						link: "https://i.imgur.com/SYzGiLq.png",
+						link: "https://imgur.com/qpxwDHv.png",
 						alt: "a",
 					},
 					second_image: {
-						link: "",
+						link: "https://imgur.com/6VN6YyO.png",
 						alt: "a",
 					},
 				},
@@ -211,15 +211,15 @@ export const siteConfig = {
 				text: {
 					first: {
 						title: "Problematica",
-						subtitle: "Argen Reps",
+						subtitle: "Drops Bahia",
 						paragraph:
-							"La problemática que enfrentaban se derivaba de que se manejaban a través de Discord, lo que generaba confusión debido a la cantidad de información acumulada. Con el propósito de mejorar la legibilidad y accesibilidad de la información, decidimos iniciar el desarrollo de una página web. Como solución, creamos una documentación detallada paso a paso. Además, integramos canales similares a los que utilizaban en Discord para garantizar una mejor organización.",
+							"DropsBahia, una tienda de sneakers, enfrentaba el problema de no tener una página web para mostrar su stock. Dependían de historias en Instagram para exhibir sus productos, pero la cantidad excesiva de historias diarias saturaba a los seguidores y hacía que muchos clientes potenciales perdieran oportunidades de compra, resultando en ventas perdidas y frustración.",
 					},
 					second: {
-						title: "",
-						subtitle: "",
+						title: "Solución",
+						subtitle: "Drops Bahia",
 						paragraph:
-							"",
+							"WebcodeBuilders desarrolló una página web personalizada y funcional para DropsBahia, proporcionando un catálogo en línea bien organizado, navegación intuitiva, disponibilidad de productos en tiempo real, un proceso de compra simplificado, y estrategias de SEO y marketing digital. Esto mejoró significativamente la experiencia del cliente, incrementó las venta, transformando la manera en que DropsBahia presentaba y vendía sus productos.",
 					},
 				},
 			},
