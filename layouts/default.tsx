@@ -17,7 +17,6 @@ export default function DefaultLayout({
       <div className="relative  flex-col overflow-x-hidden flex">
         <Head />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ71E72HZQ"/>
-        a
         <Script src="../scripts/google-analytics.js"/>
         <Navbar />
         <main className="mx-auto flex-grow w-full " id="products">

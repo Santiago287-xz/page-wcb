@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import { Image, Card, CardBody } from "@nextui-org/react";
 import type { Project } from "@/config/site";
 import ContactArticle from "@/components/contact-article";
+import { Link, Button } from "@nextui-org/react";
 
 // Argen reps
 "text-[#10984d]";
@@ -146,6 +147,19 @@ export default function Project({ project }: { project: Project }) {
               >
                 <CardBody>{project.text.second.paragraph}</CardBody>
               </Card>
+              {
+                project.link != "" ?
+                  <Button
+                    href={"https://" + project.link}
+                    as={Link}
+                    className="bg-background/60 dark:bg-default-100/50 mt-4"
+                    color="primary"
+                    showAnchorIcon
+                    variant="solid"
+                  >
+                    {project.link}
+                  </Button> : ''
+              }
             </div>
           </div>
         </article> : <></>}

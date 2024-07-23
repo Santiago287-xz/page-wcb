@@ -73,7 +73,7 @@ export const siteConfig = {
 				short_description:
 					"En este proyecto, creamos un sitio web ecommerce para la venta de periféricos del streamer <span class='text-indigo-400'> Zeko</span>.",
 				date: "07/09/2023",
-				link: "https://www.magicbyzeko.com/",
+				link: "www.magicbyzeko.com",
 				image: {
 					principal_image: {
 						link: "https://i.imgur.com/5UwKnVK.png",
@@ -126,7 +126,7 @@ export const siteConfig = {
 				short_description:
 					"El Rincón del Pescador nos solicitó crear un programa capaz de buscar productos con el fin de solicitar información específica, obteniendo datos de productos de manera más ágil y simple.",
 				date: "23/09/2023",
-				link: "https://www.magicbyzeko.com/",
+				link: "",
 				image: {
 					principal_image: {
 						link: "https://i.imgur.com/OLDbThD.png",
@@ -172,12 +172,12 @@ export const siteConfig = {
 				},
 			},
 			{
-				id: "argenreps",
+				id: "dropsbahia",
 				name: "Proyecto Drops Bahia",
 				title: "Drops Bahia",
 				short_description: "En este proyecto, desarrollamos una página web personalizada y funcional para DropsBahia, proporcionando un catálogo en línea bien organizado, navegación intuitiva, disponibilidad de productos en tiempo real.",
 				date: "23/10/2011",
-				link: "https://www.dropsbahia.com/",
+				link: "www.dropsbahia.com",
 				image: {
 					principal_image: {
 						link: "https://prod.spline.design/3oQ8OFb0mwYFMZ-p/scene.splinecode",
@@ -229,7 +229,7 @@ export const siteConfig = {
 				title: "Inmobiliaria Blum",
 				short_description: "Este proyecto implicó la actualización de una página existente. El cliente contaba con un sitio web en Jumbla y nos propuso mejorar su velocidad y estética. Decidimos utilizar WordPress para lograr una actualización más rápida y visualmente atractiva.",
 				date: "23/10/2011",
-				link: "https://www.magicbyzeko.com/",
+				link: "inmobiliariablum.com.ar",
 				image: {
 					principal_image: {
 						link: "https://i.imgur.com/cMAfqpI.png",
